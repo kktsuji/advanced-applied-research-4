@@ -12,6 +12,5 @@ docker run --rm \
        --volume "$(pwd):/data" \
        --user $(id -u):$(id -g) \
        pandoc/japanese report.md -o report.pdf \
-       --pdf-engine=lualatex -V documentclass=ltjsarticle \
-       --css=style.css
+       --pdf-engine=lualatex -V documentclass=ltjsarticle
 ```
